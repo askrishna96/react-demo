@@ -10,10 +10,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <h1>Deployed using netlify automation deployment</h1>
+        <button onClick={demo}>Click</button>
       </header>
     </div>
   );
+}
+
+var demo = () => {
+  alert("hi");
 }
 
 export default App;
