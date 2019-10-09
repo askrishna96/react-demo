@@ -1,23 +1,24 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Button from "@material-ui/core/Button";
+
+var date = new Date();
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={demo}>Click</button>
+        <Button onClick={refresh} variant="contained" color="primary">
+          Refresh
+        </Button>
+        <h2>{`${date.getHours()} : ${date.getMinutes()}`}</h2>
       </header>
     </div>
   );
 }
 
-var demo = () => {
-  alert("hi");
-}
+var refresh = () => {
+  date = new Date();
+};
 
 export default App;
