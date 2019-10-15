@@ -2,7 +2,7 @@
   "name": "prod_build",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://travellingo.netlify.com/home",
+  "homepage": "https://travellingo.netlify.com/",
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.4.3",
