@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div>
         <Router>
-          <Route path="/home">
+          <Route path="/">
             <Header />
             <Home />
             <Footer />
