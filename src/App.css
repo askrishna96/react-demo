@@ -1,12 +1,4 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -17,6 +9,63 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.app-footer {
+  text-align: right;
+  color: rgb(0, 0, 0);
+  font-size: 8px;
+  font-weight: bold;
+}
+.app-header {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: bold;
+  display: flow-root;
+}
+.card {
+  background-color: rgba(246, 246, 246, 0.938);
+  width: auto;
+  margin: 5px 5px;
+  border-radius: 3px;
+  padding: 10px 10px;
+  box-shadow: #646464 3px 3px 8px;
+}
+.body {
+  height: 81vh;
+}
+.header-align-right {
+  float: right;
+}
+.header-align-left {
+  float: left;
+}
+.checkout-card-details-block {
+  height: 60vh;
+  width: 60vh;
+  box-shadow: black 3px 3px 12px;
+  background-color: rgba(255, 255, 255, 0.698);
+  border-radius: 3px;
+  padding: 8px;
+}
+.checkout-card {
+  padding: 36px;
+  display: flex;
+  justify-content: center;
+}
+.form-input-field {
+  font: inherit;
+  color: black;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 15px;
+  display: block;
+  padding: 6px 0 7px;
+  background-color: #dfe6e9;
+  text-align: center;
+}
+.button {
+  padding: 8px 25px;
+  background-color: lightseagreen;
+  color: black;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px;
 }

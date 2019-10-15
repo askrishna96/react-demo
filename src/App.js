@@ -1,24 +1,30 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
-import Button from "@material-ui/core/Button";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import Home from "./components/home";
+import { Route, BrowserRouter as Router } from "react-router-dom";
+import Checkout from "./components/checkout";
 
-var date = new Date();
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Button onClick={refresh} variant="contained" color="primary">
-          Refresh
-        </Button>
-        <h2>{`${date.getHours()} : ${date.getMinutes()}`}</h2>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Router>
+          <Route path="/home">
+            <Header />
+            <Home />
+            <Footer />
+          </Route>
+          <Route path="/checkout">
+            <Header />
+            <Checkout />
+            <Footer />
+          </Route>
+        </Router>
+      </div>
+    );
+  }
 }
-
-var refresh = () => {
-  date = new Date();
-};
 
 export default App;
